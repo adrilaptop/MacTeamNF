@@ -1,0 +1,111 @@
+#titulo_I{
+    text-align: center;
+    padding: 5%;
+    background: linear-gradient(to right, yellow, red);
+    border: 2px solid black;
+    font-size: 70px;
+}
+#Imagen_MAC{
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+body{
+    background-color: rgb(199, 113, 15);
+}
+.hiperenlaces{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+#fondo2{
+    background-color: black;
+    padding: 1%;
+    text-align: center;
+    
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+}
+.titulos{
+    background: linear-gradient(yellow, red);
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    
+    
+}
+#Alejandra{
+    position: absolute;
+    left:15%;
+    top: 30%;
+}#Leire{
+    position: absolute;
+    left:30%;
+    top: 30%;
+}#hao{
+    position: absolute;
+    left:45%;
+    top: 30%;
+}#adri{
+    position: absolute;
+    left:60%;
+    top: 30%;
+}#Ferran{
+    position: absolute;
+    left:75%;
+    top: 30%;
+}
+
+
+
+
+.carta div{
+    top: 30%;
+    /* borde de las cartas*/
+   border: 5px solid black;
+    /*tamaño de la carta */
+   width: 200px;
+    /* posición absoluta */
+   position: absolute;
+    /*tamaño del texto */
+   font-size: 30px;
+    /* alineación de texto*/
+    text-align: center;
+    /*las letras en negrita*/
+   font-weight: bold;
+    /*Aqui le decimos a la carta que la parte trasera no es visible */
+    backface-visibility: hidden;
+    /* le decimos que la animación tardara 1,5 segundos en hacerse cada vez */
+    transition: 1.5s;
+    background: linear-gradient(to bottom right,gold,rgb(247, 232, 148), gold);
+}
+
+/* prop es el div que hicimos para separar la cara frontal de la cara trasera (En este caso es la frontal)*/
+.carta .frente{
+   
+    transform: perspective(500px) rotateY(0deg);
+    
+    
+
+}.carta .P_trasera{
+    background-color:green;
+    transform: perspective(500px) rotateY(180deg);
+   
+}
+
+.carta:hover .frente{
+     transform: perspective(500px) rotateY(180deg);
+
+ }
+.carta:hover .P_trasera{
+   transform: perspective(500px) rotateY(360deg);
+}
+.caracteristicas{
+   font-size: 10px;
+   padding:0px;
+   text-align: left;
+}
